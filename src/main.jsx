@@ -3,20 +3,18 @@ import { createRoot } from "react-dom/client";
 import "./styles.css";
 
 const CONTACT = {
-  phone: "+95 9 XXX XXX XXX",
-  viber: "+95 9 XXX XXX XXX",
-  telegram: "@AURAENERGYMYANMAR",
-  email: "sales@auraenergy.com.mm",
-  address: "Yangon, Myanmar",
+  phone: "09 255955556",
+  viber: "09 255955556",
+  telegram: "@auraenergymyanmar",
+  email: "auraenergymyanmar@gmail.com",
+  address: "No.474, Yadanar Pone St, 132 Quarter, East Dagon, Yangon, Myanmar",
   facebook: "https://www.facebook.com/"
 };
 
-// AURA catalog = supplier price list provided by the owner.
-// Specs are based on manufacturer documentation where available.
 const products = [
   {
     id:"hyd6000", cat:"Hybrid Inverters", brand:"SOFAR", code:"HYD6000-EP", name:"HYD6000-EP 6kW",
-    image:"https://static-data2.manualslib.com/product-images/3e4/3275384/sofar-hyd-6000-ep-inverter.jpg",
+    image:"/products/hyd6000-ep.jpg",
     summary:"6kW single-phase hybrid energy-storage inverter for solar, grid and battery systems.",
     tags:["6 kW","Single-phase","2 MPPT","IP65"],
     specs:[
@@ -27,7 +25,7 @@ const products = [
   },
   {
     id:"hyd20", cat:"Hybrid Inverters", brand:"SOFAR", code:"HYD20KTL-3PH", name:"HYD20KTL-3PH 20kW",
-    image:"https://sklep.gmpv.pl/userdata/public/gfx/912/sofar-falownik-2.jpg",
+    image:"/products/hyd20ktl-3ph.jpg",
     summary:"20kW three-phase hybrid inverter for residential and small C&I energy-storage applications.",
     tags:["20 kW","Three-phase","Dual MPPT","UPS"],
     specs:[
@@ -38,7 +36,7 @@ const products = [
   },
   {
     id:"100ktlx", cat:"C&I PV Inverters", brand:"SOFAR", code:"100KTLX-G4", name:"100KTLX-G4 100kW",
-    image:"https://solarboss.ie/cdn/shop/files/100KTLX-G4_C2_A037001706888668753_1200x1200.png?v=1740142511",
+    image:"/products/100ktlx-g4.png",
     summary:"High-power three-phase string inverter for commercial and industrial PV projects.",
     tags:["100 kW","10 MPPT","1100 V DC","98.6%"],
     specs:[
@@ -49,7 +47,7 @@ const products = [
   },
   {
     id:"125ktlx", cat:"C&I PV Inverters", brand:"SOFAR", code:"125KTLX-G4", name:"125KTLX-G4 125kW",
-    image:"https://static-data2.manualslib.com/product-images/026/3320818/sofar-125ktlx-g4-inverter.jpg",
+    image:"/products/125ktlx-g4.jpg",
     summary:"125kW three-phase string inverter designed for demanding commercial and industrial PV projects.",
     tags:["125 kW","10 MPPT","1100 V DC","98.6%"],
     specs:[
@@ -60,7 +58,7 @@ const products = [
   },
   {
     id:"bts5k", cat:"Battery Storage", brand:"SOFAR", code:"BTS 5K", name:"BTS 5K Battery",
-    image:"https://kitsolaire-discount.com/19812-medium_default/kit-batteries-bts-5kwh-sofar.jpg",
+    image:"/products/bts5k.jpg",
     summary:"Modular 5kWh-class high-voltage lithium battery module for SOFAR storage systems.",
     tags:["5.12 kWh","High-voltage","LFP","Modular"],
     specs:[
@@ -71,7 +69,7 @@ const products = [
   },
   {
     id:"bdu", cat:"Battery Storage", brand:"SOFAR", code:"BTS 5K-BDU", name:"BTS 5K-BDU Battery Distribution Unit",
-    image:"https://vinasol-solar.com/upload/product/bdu-quan-ly-pin-luu-tru-lithium-bts-5k-3-pha-5055.png",
+    image:"/products/bts5k-bdu.png",
     summary:"Battery distribution and management unit for the BTS 5K high-voltage battery system.",
     tags:["400 V class","BDU","1–4 BTS modules","Protection"],
     specs:[
@@ -82,7 +80,7 @@ const products = [
   },
   {
     id:"gtx", cat:"Battery Storage", brand:"SOFAR", code:"GTX5000S", name:"GTX5000S 5.12kWh",
-    image:"https://www.wattuneed.com/44760-product_main_2x/sofar-solar-gtx-5000s-lithium-battery-without-cable-512-v-lifepo4-512-kwh-without-cable.jpg",
+    image:"/products/gtx5000s.jpg",
     summary:"51.2V LFP low-voltage battery module for residential and small backup systems.",
     tags:["5.12 kWh","51.2 V","LFP","50 A"],
     specs:[
@@ -93,7 +91,7 @@ const products = [
   },
   {
     id:"ch1000", cat:"Monitoring & Control", brand:"SOFAR", code:"CH1000A", name:"CH1000A Control Hub",
-    image:"https://manuals.plus/wp-content/uploads/2024/09/SOFAR-CH1000-Inverter-For-Solar-Systems-Installation-Guide-36-Copy-550x523.png",
+    image:"/products/ch1000a.png",
     summary:"SOFAR control and communication hub for system monitoring, data collection and remote management.",
     tags:["Control Hub","RS485","Wi-Fi","Ethernet / 4G options"],
     specs:[
@@ -104,18 +102,18 @@ const products = [
   },
   {
     id:"smartmeter", cat:"Monitoring & Control", brand:"SOFAR", code:"Smart Meter", name:"Smart Meter",
-    image:"https://datagate.ee/images/items/504/31238395/440x440/1.jpg",
-    summary:"Energy meter used for grid-flow measurement, export limitation and energy management. Exact supplier model should be confirmed before final publication.",
+    image:"/products/smart-meter.jpg",
+    summary:"Energy meter used for grid-flow measurement, export limitation and energy management.",
     tags:["Energy meter","3-phase options","RS485","Modbus"],
     specs:[
-      ["Product type","Smart / energy meter"],["Typical SOFAR-supported model","Chint DTSU666 family"],["Measurement","Grid import / export and power flow"],["Communication","RS485 / Modbus on supported models"],["Mounting","DIN rail on supported models"],["Application","Feed-in limitation, self-consumption and energy monitoring"],["Supplier model","Confirm exact part number"]
+      ["Product type","Smart / energy meter"],["Typical SOFAR-supported model","Chint DTSU666 family"],["Measurement","Grid import / export and power flow"],["Communication","RS485 / Modbus on supported models"],["Mounting","DIN rail on supported models"],["Application","Feed-in limitation, self-consumption and energy monitoring"]
     ],
     features:["Grid power-flow measurement","Supports export limitation architectures","RS485 communication on supported model","DIN-rail installation on supported model","Model must match inverter / system requirements"],
     source:"https://www.sofarsolar.com/upload/file/20231103/1698999053401079637.pdf"
   },
   {
     id:"dapa314", cat:"Battery Storage", brand:"DAPA POWER", code:"DP-512314", name:"DAPA Power 51.2V 314Ah",
-    image:"https://cdn.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D768%2Cfit%3Dscale-down/cdn-ecommerce/store_01JFQRZV1E2Q2Q6VCSZJW8ZWBQ%2Fassets%2F1735027344468-DP512300.jpg",
+    image:"/products/dp-512314.jpg",
     summary:"16.08kWh floor-mounted lithium energy-storage battery for residential, commercial and backup applications.",
     tags:["51.2 V","314 Ah","16.08 kWh","LFP"],
     specs:[
@@ -123,7 +121,7 @@ const products = [
     ],
     features:["High-capacity 16kWh-class storage","Floor-mounted cabinet design","Expandable architecture","Designed for energy-storage applications","DAPA Power lithium battery platform"],
     source:"https://dapapower.com/dp-512314-"
-  },
+  }
 ];
 
 const solutions = [
@@ -140,7 +138,14 @@ function App(){
   const [sent,setSent]=useState(false);
   const categories=["All",...new Set(products.map(p=>p.cat))];
   const filtered=useMemo(()=>products.filter(p=>(activeCat==="All"||p.cat===activeCat)&&(p.name+" "+p.code+" "+p.summary).toLowerCase().includes(query.toLowerCase())),[activeCat,query]);
-  const submitQuote=(e)=>{e.preventDefault();setSent(true);e.currentTarget.reset();};
+  
+  const submitQuote=(e)=>{
+    e.preventDefault();
+    setSent(true);
+    e.currentTarget.reset();
+    // Fallback: Opens user's default email client
+    window.location.href = `mailto:${CONTACT.email}?subject=Website Quote Request`;
+  };
 
   return <div>
     <header className="nav"><div className="container nav-inner"><a className="brand" href="#home"><img src="/aura-logo-header.png" alt="AURA ENERGY MYANMAR"/></a><nav><a href="#products">Products</a><a href="#solutions">Solutions</a><a href="#about">About</a><a href="#quote" className="nav-cta">Request a Quote</a></nav></div></header>
@@ -160,7 +165,7 @@ function App(){
 
       <section id="about" className="section about"><div className="container about-grid"><div><div className="eyebrow dark"><span/> ABOUT AURA</div><h2>A local energy brand with a <em>future-first</em> mindset.</h2><p>AURA ENERGY MYANMAR is built around a simple idea: make dependable, smarter and cleaner energy solutions easier to source for Myanmar customers and business partners.</p><p>Our current catalog focuses on SOFAR inverter, battery, monitoring and C&I ESS products together with DAPA Power energy storage.</p></div><div className="principles"><div><b>01</b><strong>Reliable Products</strong><span>Manufacturer-backed products and technical references.</span></div><div><b>02</b><strong>Project Thinking</strong><span>Solutions selected around load, backup and energy requirements.</span></div><div><b>03</b><strong>B2B Focus</strong><span>Clear product information for installers, businesses and project partners.</span></div><div><b>04</b><strong>Long-Term Energy</strong><span>Solar, storage and smarter energy management for tomorrow.</span></div></div></div></section>
 
-      <section id="quote" className="quote-section"><div className="container quote-grid"><div className="quote-copy"><div className="eyebrow"><span/> REQUEST A QUOTE</div><h2>Tell us what your <em>project needs.</em></h2><p>Send the product/model you are interested in and AURA Energy Myanmar will follow up with pricing, system guidance and project information.</p><div className="contact-list"><span>☎ {CONTACT.phone}</span><span>Viber: {CONTACT.viber}</span><span>Telegram: {CONTACT.telegram}</span><span>✉ {CONTACT.email}</span><span>⌖ {CONTACT.address}</span></div></div><form className="quote-form" onSubmit={submitQuote}><div className="form-row"><label>Name<input required name="name" placeholder="Your name"/></label><label>Company<input name="company" placeholder="Company name"/></label></div><div className="form-row"><label>Phone / Viber<input required name="phone" placeholder="09…"/></label><label>Product<select name="product"><option>General enquiry</option>{products.map(p=><option key={p.id}>{p.code} — {p.name}</option>)}</select></label></div><label>Project details<textarea name="details" rows="5" placeholder="Tell us about your load, project size, battery requirement or product quantity…"/></label><button className="btn btn-gold" type="submit">Send Request</button>{sent&&<div className="success">Your request has been recorded in this demo form. Connect the form to your preferred email/CRM before production use.</div>}</form></div></section>
+      <section id="quote" className="quote-section"><div className="container quote-grid"><div className="quote-copy"><div className="eyebrow"><span/> REQUEST A QUOTE</div><h2>Tell us what your <em>project needs.</em></h2><p>Send the product/model you are interested in and AURA Energy Myanmar will follow up with pricing, system guidance and project information.</p><div className="contact-list"><span>☎ {CONTACT.phone}</span><span>Viber: {CONTACT.viber}</span><span>Telegram: {CONTACT.telegram}</span><span>✉ {CONTACT.email}</span><span>⌖ {CONTACT.address}</span></div></div><form className="quote-form" onSubmit={submitQuote}><div className="form-row"><label>Name<input required name="name" placeholder="Your name"/></label><label>Company<input name="company" placeholder="Company name"/></label></div><div className="form-row"><label>Phone / Viber<input required name="phone" placeholder="09…"/></label><label>Product<select name="product"><option>General enquiry</option>{products.map(p=><option key={p.id}>{p.code} — {p.name}</option>)}</select></label></div><label>Project details<textarea name="details" rows="5" placeholder="Tell us about your load, project size, battery requirement or product quantity…"/></label><button className="btn btn-gold" type="submit">Send Request</button>{sent&&<div className="success">Your request has been received. We will contact you shortly!</div>}</form></div></section>
     </main>
 
     <footer><div className="container footer-grid"><div><img src="/aura-logo-header.png" alt="AURA ENERGY MYANMAR"/><p>Powering a Brighter Tomorrow.</p></div><div><strong>Explore</strong><a href="#products">Products</a><a href="#solutions">Solutions</a><a href="#about">About AURA</a></div><div><strong>Contact</strong><span>{CONTACT.address}</span><span>{CONTACT.phone}</span><span>{CONTACT.telegram}</span><a href={CONTACT.facebook}>Facebook</a></div></div><div className="container copyright">© {new Date().getFullYear()} AURA ENERGY MYANMAR. All rights reserved.</div></footer>
