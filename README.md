@@ -1,33 +1,29 @@
 # AURA ENERGY MYANMAR Website
 
-A responsive React + Vite website for AURA ENERGY MYANMAR.
+React + Vite website for AURA ENERGY MYANMAR.
 
-## Included
-- Premium corporate homepage
-- Product catalog for DAPA Power and SOFAR lines
-- C&I / ESS solution sections
+## Current Product Catalog
+This version is intentionally limited to the supplier product list provided for the AURA catalog:
+
+1. SOFAR HYD6000-EP 6KW
+2. SOFAR HYD20KTL-3PH 20KW
+3. SOFAR 100KTLX-G4
+4. SOFAR 125KTLX-G4
+5. SOFAR BTS 5K
+6. SOFAR BTS 5K-BDU Battery Distribution
+7. SOFAR GTX5000S
+8. CH1000A Controller / Control Hub
+9. Smart Meter
+10. DAPA Power Battery 51.2V 314Ah (DP-512314)
+
+## Product UI
+- Search and category filters
+- Product images
+- Datasheet-style modal for every product
+- Technical specification table
+- Key features
+- Manufacturer documentation link
 - Quote request form
-- Mobile-first responsive design
-- Supplied AURA logo included in `public/aura-logo-header.png` and `public/aura-logo-hero.png`
 
-## Run locally
-```bash
-npm install
-npm run dev
-```
-
-## Build
-```bash
-npm run build
-```
-
-## Before publishing
-Replace the placeholder contact details in `src/main.jsx`:
-- phone
-- Viber
-- Telegram
-- email
-- address
-- Facebook URL
-
-Product codes/specs marked "Confirm" were intentionally left un-invented and should be replaced with the exact code from your supplier catalog/datasheet.
+## Important
+Technical specifications are informational and should be checked against the latest manufacturer documentation before quotation, engineering or installation. The Smart Meter exact supplier part number should be confirmed before final publication.
